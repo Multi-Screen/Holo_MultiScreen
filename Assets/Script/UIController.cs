@@ -5,14 +5,19 @@ using UnityEngine;
 
 public class UIController : MonoBehaviour
 {   
+
+    public GameObject obj;
     //Socket控制器
     public SocketManager mSocketMgr;
     //消息队列
-    public Queue<string> mMsgQueue ;
-    // Start is called before the first frame update
-    void Start()
+    public Queue<string> mMsgQueue = new Queue<string>();
+
+    // 显示状态
+    private int mShowState = 0;
+ 
+
+    public void Start()
     {   
-        mMsgQueue = new Queue<string>();
         mSocketMgr.mConnectSuccess += ConnectSuccess;
         mSocketMgr.mReceiveMsgCallBack += ReceiveMsgCallBack;
         mSocketMgr.ConnectServer();
@@ -24,6 +29,13 @@ public class UIController : MonoBehaviour
     public void ConnectSuccess()
     {
         Debug.Log("UIController 连服务器成功回调");
+        // 自动登录
+        MsgData data = new MsgData();
+        data.msgType = MsgType.Login;
+        data.msg = "login";
+        data.name = "holo";
+        string jmsg = JsonMapper.ToJson(data);
+        mSocketMgr.SendMsgToServer(jmsg);
     }
 
     public void ReceiveMsgCallBack(string jsonmsg)
@@ -32,44 +44,44 @@ public class UIController : MonoBehaviour
         mMsgQueue.Enqueue(jsonmsg);
     }
     
-    public void OnLogin()
-    {
-        MsgData data = new MsgData();
-        data.msgType = MsgType.Login;
-        data.msg = "login";
-        State.number = 1;
-        string jmsg = JsonMapper.ToJson(data);
-        mSocketMgr.SendMsgToServer(jmsg);
-    }
-    
-    public void OnLogout()
-    {
-        MsgData data = new MsgData();
-        data.msgType = MsgType.LoginOut;
-        data.msg = "logout";
-        State.number = 0;
-        string jmsg = JsonMapper.ToJson(data);
-        mSocketMgr.SendMsgToServer(jmsg);
-    }
-
-    public void OnBtnClick()
-    {   
-        MsgData data = new MsgData();
-        data.msgType = MsgType.HideCube;
-        data.msg = "hidecube";
-        string jmsg = JsonMapper.ToJson(data);
-        mSocketMgr.SendMsgToServer(jmsg);
-    }
-    
     public void OnDestroy()
     {
         mSocketMgr.mConnectSuccess -= ConnectSuccess;
         mSocketMgr.mReceiveMsgCallBack -= ReceiveMsgCallBack;
     }
-    
+
     // Update is called once per frame
-    void Update()
-    {
-        
+    public void Update()
+    {   
+        if (mMsgQueue.Count > 0)
+        {
+            string jsonmsg = mMsgQueue.Dequeue();
+            // //把json字符串转为数据类
+            MsgData msgData = JsonMapper.ToObject<MsgData>(jsonmsg);
+            Debug.Log("msgType:" + msgData.msgType);
+            switch (msgData.msgType)
+            {   
+                case MsgType.Login:
+                    Debug.Log("登录成功");
+                    break;
+                case MsgType.HideCube:
+                if (mShowState == 1){
+                    mShowState = 0;
+                }else{  
+                    mShowState = 1;
+                }
+                    break;
+                default:
+                    break;
+            }
+        }
+
+
+        // 主线程和子线程的问题
+        if(mShowState==0){
+            obj.SetActive(true);
+        }else{
+            obj.SetActive(false);
+        }
     }
 }

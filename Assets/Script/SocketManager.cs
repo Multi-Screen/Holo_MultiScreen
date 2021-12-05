@@ -12,24 +12,14 @@ public class SocketManager : MonoBehaviour
     //数据缓冲池
     public byte[] mBuffer = new byte[1024];
     //数据拼接池
-    public MemoryStream mMemoryStream;
+    public MemoryStream mMemoryStream = new MemoryStream();
     //接收消息队列
-    public Queue<string> mRecvMsgQueue;
+    public Queue<string> mRecvMsgQueue = new Queue<string>();
     //连接成功回调
     public Action mConnectSuccess;
     //接收消息回调
     public Action<string> mReceiveMsgCallBack;
 
-    private void Awake()
-    {
-        mMemoryStream = new MemoryStream();
-        mRecvMsgQueue = new Queue<string>();
-    }
-
-    private void Start()
-    {
-        
-    }
 
     public void ConnectServer()
     {
@@ -37,11 +27,11 @@ public class SocketManager : MonoBehaviour
         //创建Socket
         mSocket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
         //绑定IP地址和端口
-        IPEndPoint iPEndPoint = new IPEndPoint(IPAddress.Parse("127.0.0.1"), 9000);
+        IPEndPoint iPEndPoint = new IPEndPoint(IPAddress.Parse("172.22.20.231"), 9000);
         //开始连接服务器
         mSocket.BeginConnect(iPEndPoint, ConnectCallBack, "");
     }
-    private void Update()
+    public void Update()
     {
         if (mRecvMsgQueue.Count > 0)
         {

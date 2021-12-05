@@ -13,7 +13,6 @@ public class Protocal
 public enum MsgType
 { 
     Login,//登录消息
-    LoginOut,//退出房间消息
     HideCube
 }
 /// <summary>
@@ -26,9 +25,9 @@ public class MsgData
     /// </summary>
     public MsgType msgType;
     /// <summary>
-    /// 玩家昵称
+    /// 设备名称
     /// </summary>
-    // public string name;
+    public string name;
     /// <summary>
     /// 消息内容
     /// </summary>
