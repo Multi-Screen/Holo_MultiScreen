@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/MultiUserCapabilities.unity
+    guid: 999637552c12d99438ec552163fa2b6f
+  - enabled: 0
     path: Assets/Scenes/holo.unity
     guid: beaaf713d894946498ae49bbd7c9fbfc
   m_configObjects:
