@@ -19,7 +19,7 @@ MonoBehaviour:
     AppIdVoice: 
     AppVersion: 
     UseNameServer: 1
-    FixedRegion: 
+    FixedRegion: CN
     Server: 
     Port: 0
     ProxyServer: 
@@ -45,6 +45,7 @@ MonoBehaviour:
   - PunRPC_ShareAzureAnchorId
   - PunRPC_ToggleExplodedView
   - PunRPC_TogglePlacementHints
+  - OnAwakeRPC
   DisableAutoOpenWizard: 1
   ShowSettings: 1
   DevRegionSetOnce: 1

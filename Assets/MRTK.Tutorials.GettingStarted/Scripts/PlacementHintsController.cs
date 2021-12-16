@@ -6,8 +6,10 @@ namespace MRTK.Tutorials.GettingStarted
     {
         public delegate void PlacementHintsControllerDelegate();
 
-        [SerializeField] private bool activeAtStart = true;
-        [SerializeField] private GameObject[] placementHints = default;
+        [SerializeField] 
+        private bool activeAtStart = true;
+        [SerializeField] 
+        private GameObject[] placementHints = default;
 
         private bool isPunEnabled;
 

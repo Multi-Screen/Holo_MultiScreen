@@ -6,34 +6,34 @@ EditorUserSettings:
   serializedVersion: 4
   m_ConfigSettings:
     RecentlyUsedScenePath-0:
-      value: 22424703114646741d0b0201260550022319113e356703282c240d3fe7f37b15e3ee38c4e83e2a303c11a0380a304e12fd080007f3250f1f223dd92b09fe1d031dc057e815ca1610ce3719dafe2ef5d4d0d4f7ebd5dfe2c0cacab2f7d1e8eff5e5fda0b5bfa6f5d4b3
-      flags: 0
-    RecentlyUsedScenePath-1:
-      value: 22424703114646741d0b0201260550022319113e356703282c240d3fe7f37b15e3ee38c4e83e2a303c11a0380a304e10e20f073bf9180f2e090ff01e1dfa5f3c01c016f515db1a39d31811dec1189ff6dbdfc0f3
-      flags: 0
-    RecentlyUsedScenePath-2:
-      value: 22424703114646741d0b0201260550022319113e356703282c240d3fe7f37b15e3ee38c4e83e2a303c11a0380a304e0df719070ee238392f370ffe0b35fa041612d111ca14ed071dc60910cb822fd4f0dbd3c0d9ebcfc1d9ddda84f7e0f5edecfcfeabdeb2a9f1d0a6aab0a4a1cbd3dd
-      flags: 0
-    RecentlyUsedScenePath-3:
       value: 22424703114646741d0b0201260550022319113e356703282c240d3fe7f37b15e3ee38c4e83e2a303c11a0380a304e0bf7041a04e40d06040627f30d14ef041a1ecb3ddd1bc50f10ce5628cbc30edef1d3dadbfdf1e5e4ddcecba9fdfac7ebfad6f0a8cfafb0e8d5b8aadba9aecfd7c8c484a2cac5d2d0
       flags: 0
-    RecentlyUsedScenePath-4:
+    RecentlyUsedScenePath-1:
       value: 22424703114646741d0b0201260550022319113e356703282c240d3fe7f37b15e3ee38c4e83e2a303c11a0380a304e0bf7121d24d5392f131003ed0214b0241609d137e628ed071dc60910cb8308dfeac1cf
       flags: 0
-    RecentlyUsedScenePath-5:
+    RecentlyUsedScenePath-2:
       value: 22424703114646741d0b0201260550022319113e356703282c240d3fe7f37b15e3ee38c4e83e2a303c11a0380a304e06fd060624f4010f08052af81a14fc041a1ecb3ddd1bc50f10ce5625c1c112fee1dfd3d7fefceef3ddddcba9fdfad5f6f9f8e1a9fee4bdf2c9beb6
       flags: 0
-    RecentlyUsedScenePath-6:
+    RecentlyUsedScenePath-3:
       value: 22424703114646741d0b0201260550022319113e356703282c240d3fe7f37b15e3ee38c4e83e2a303c11a0380a304e06fd060624f4010f08052af81a14fc041a1ecb3ddd1bc50f10ce5625c1c112fee1dfd3d7fefceef3ddddcba9fdfac7ebfad6f0a8cfafb0e8d5b8aadba9aecfd7c8c484a2cac5d2d0
       flags: 0
-    RecentlyUsedScenePath-7:
+    RecentlyUsedScenePath-4:
       value: 22424703114646741d0b0201260550022319113e356703282c240d3fe7f37b0beae821c5ee393a322a07a1290a371526
       flags: 0
-    RecentlyUsedScenePath-8:
+    RecentlyUsedScenePath-5:
       value: 22424703114646741d0b0201260550022319113e356703282c240d3fe7f37b0beae821dafe292b39342be13a0b701431fb1e10
       flags: 0
-    RecentlyUsedScenePath-9:
+    RecentlyUsedScenePath-6:
       value: 22424703114646741d0b0201260550022319113e356703282c240d3fe7f37b17f2e238cad11c302e0c0ce6281d1b193eff1a050eb81e04020517
+      flags: 0
+    RecentlyUsedScenePath-7:
+      value: 22424703114646680c031c2e1530103d1f0f1d2e6c1a23312120092aa2d43b37eeec3ffda71f273d3412e33917715371a5445b44d20e0704024eb04e39fe1e1725d719c611c1111b842a1fcbc318c2acfdd7daeef1e5f3ddccdea3e6fdffe0ddedf0a8eba6adef8ebfa1f7a5b6
+      flags: 0
+    RecentlyUsedScenePath-8:
+      value: 22424703114646680c031c2e1530103d1f0f1d2e6c1a23312120092aa2d43b37eeec3ffda71f273d3412e33917715371a5445b44d20e0704024eb04e22eb111d15c40ac129c01e18ce0b53fdce18dfe6c699f7e6d1fbf7d1d0d885eaf5fdfef4f0e2ebeea4a1e8d9
+      flags: 0
+    RecentlyUsedScenePath-9:
+      value: 22424703114646680e0b0227036c72051a03111f3f2d34132c391c31ebec3d2cebe225a7f234362820
       flags: 0
     vcSharedLogLevel:
       value: 0d5e400f0650
