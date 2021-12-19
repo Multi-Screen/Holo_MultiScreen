@@ -19,7 +19,9 @@ namespace shoukailiang.MultiUserCapabilities
             Debug.Log("GenericNetworkManager.Instance.azureAnchorId: " + GenericNetworkManager.Instance.azureAnchorId);
 
             var pvLocalUser = GenericNetworkManager.Instance.localUser.gameObject;
+            Debug.Log("pvLocalUser="+pvLocalUser);
             var pu = pvLocalUser.gameObject.GetComponent<PhotonUser>();
+            Debug.Log("pu="+pu);
             pu.ShareAzureAnchorId();
         }
 

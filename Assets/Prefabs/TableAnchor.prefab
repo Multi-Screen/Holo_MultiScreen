@@ -9,13 +9,13 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6931196017462994534}
-  - component: {fileID: 1653866381}
   - component: {fileID: 3498052043663173285}
   - component: {fileID: 6931196017462994533}
-  - component: {fileID: 1653866380}
   - component: {fileID: 2561163012944198892}
   - component: {fileID: 1592563772542313561}
   - component: {fileID: 2934717714530574862}
+  - component: {fileID: 5656785196093679344}
+  - component: {fileID: 8291172843612284377}
   m_Layer: 0
   m_Name: TableAnchor
   m_TagString: Untagged
@@ -32,25 +32,13 @@ Transform:
   m_GameObject: {fileID: 6931196017462994529}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -0.55, z: 0}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 468229091480462172}
-  - {fileID: 5871924182248469638}
+  - {fileID: 5871924182325429172}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1653866381
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6931196017462994529}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 851a3f33be97d6c439eb1f7ed341108c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &3498052043663173285
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -64,7 +52,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   authenticationMode: 0
-  spatialAnchorsAccountId: ac3d8270-af4b-4744-ab32-cd86a5e86116
+  spatialAnchorsAccountId: /subscriptions/aa9818c9-3d5f-4d09-b610-e2edda09beb1/resourceGroups/MultiUser/providers/Microsoft.MixedReality/spatialAnchorsAccounts/MultiUserCapabilities
   spatialAnchorsAccountKey: zsQFA0DuD6lah+XkXBQk/i6LyL40skD/Y76vpVUC3yk=
   spatialAnchorsAccountDomain: southeastasia.mixedreality.azure.com
   clientId: 
@@ -82,20 +70,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dcbd141a0cfae6a4e813b9fd7b3b748c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  publicSharingPin: 1982734901747
+  publicSharingPin: 1982734971747
   currentAzureAnchorID: 
---- !u!114 &1653866380
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6931196017462994529}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 966fbb7525a1160479e12531ae64e45e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &2561163012944198892
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -137,7 +113,31 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_AnchorPrefab: {fileID: 0}
---- !u!1001 &868223873
+--- !u!114 &5656785196093679344
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6931196017462994529}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 851a3f33be97d6c439eb1f7ed341108c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &8291172843612284377
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6931196017462994529}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 966fbb7525a1160479e12531ae64e45e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1001 &1052425395
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -147,7 +147,7 @@ PrefabInstance:
     - target: {fileID: 5830650327270375407, guid: 1d468ba087db3f2438ce842236470f57, type: 3}
       propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1653866380}
+      objectReference: {fileID: 0}
     - target: {fileID: 5830650327270375407, guid: 1d468ba087db3f2438ce842236470f57, type: 3}
       propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: ShareAzureAnchor
@@ -171,7 +171,7 @@ PrefabInstance:
     - target: {fileID: 5830650328030752946, guid: 1d468ba087db3f2438ce842236470f57, type: 3}
       propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1653866380}
+      objectReference: {fileID: 0}
     - target: {fileID: 5830650328030752946, guid: 1d468ba087db3f2438ce842236470f57, type: 3}
       propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: GetAzureAnchor
@@ -314,10 +314,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1d468ba087db3f2438ce842236470f57, type: 3}
---- !u!4 &5871924182248469638 stripped
+--- !u!4 &5871924182325429172 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5871924182487547655, guid: 1d468ba087db3f2438ce842236470f57, type: 3}
-  m_PrefabInstance: {fileID: 868223873}
+  m_PrefabInstance: {fileID: 1052425395}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &3766215662200129575
 PrefabInstance:

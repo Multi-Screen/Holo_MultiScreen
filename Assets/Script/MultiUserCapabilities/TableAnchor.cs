@@ -8,7 +8,7 @@ namespace shoukailiang.MultiUserCapabilities
         
         // 单例
         private void Start()
-        {
+        {   
             if (Instance == null)
             {
                 Instance = this;

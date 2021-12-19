@@ -104,7 +104,6 @@ namespace shoukailiang.MultiUserCapabilities
 
             var go = PhotonNetwork.Instantiate(roverExplorerPrefab.name, positionOnTopOfSurface,
                 roverExplorerLocation.rotation);
-            
         }
 
         // private void CreateMainLunarModule()

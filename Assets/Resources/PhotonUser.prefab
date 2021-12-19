@@ -53,7 +53,7 @@ MonoBehaviour:
   OwnershipTransfer: 0
   observableSearch: 0
   ObservedComponents:
-  - {fileID: 0}
+  - {fileID: 5331406788271571201}
   sceneViewId: 0
   InstantiationId: 0
   isRuntimeInstantiated: 0
@@ -81,7 +81,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de4787c3bfc32ef46a9d0377e804ad82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isUser: 0
+  isUser: 1
 --- !u!1 &3000569308611278184
 GameObject:
   m_ObjectHideFlags: 0

@@ -45,7 +45,6 @@ public class UIController : MonoBehaviour, IOnEventCallback
         byte eventCode = photonEvent.Code;
         if (eventCode == MoveUnitsToTargetPositionEvent)
         {
-            Debug.Log(car);
             car.SetActive(false);
         }
     }
