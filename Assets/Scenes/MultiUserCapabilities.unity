@@ -881,6 +881,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: SharedPlayground
       objectReference: {fileID: 0}
+    - target: {fileID: 3478108771012852592, guid: 618abd0425e83b64ca12278f2c6e8e11, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3478108771012852592, guid: 618abd0425e83b64ca12278f2c6e8e11, type: 3}
+      propertyPath: m_TagString
+      value: car
+      objectReference: {fileID: 0}
     - target: {fileID: 4171226848315217698, guid: 618abd0425e83b64ca12278f2c6e8e11, type: 3}
       propertyPath: m_Camera
       value: 

@@ -23,6 +23,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RoverExplorer_Complete_Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 8251594864840825906, guid: 1817c36b870c0644dbafd663cfd6f718, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     - target: {fileID: 8251594864840825916, guid: 1817c36b870c0644dbafd663cfd6f718, type: 3}
       propertyPath: constraintsManager
       value: 

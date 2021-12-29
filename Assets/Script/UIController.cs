@@ -5,11 +5,11 @@ using ExitGames.Client.Photon;
 using UnityEngine;
 using Photon.Pun;
 using Photon.Realtime;
+using Script;
 
 public class UIController : MonoBehaviour, IOnEventCallback
 {   
     // If you have multiple custom events, it is recommended to define them in the used class
-    public const byte MoveUnitsToTargetPositionEvent = 1;
 
     private GameObject car;
 
@@ -22,7 +22,6 @@ public class UIController : MonoBehaviour, IOnEventCallback
     // Update is called once per frame
     void Update()
     {
-
         if (car == null)
         {
             car = GameObject.FindGameObjectWithTag("car");
@@ -43,9 +42,9 @@ public class UIController : MonoBehaviour, IOnEventCallback
     public void OnEvent(EventData photonEvent)
     {
         byte eventCode = photonEvent.Code;
-        if (eventCode == MoveUnitsToTargetPositionEvent)
+        if (eventCode == SignalEnum.SHOWCAR)
         {
-            car.SetActive(false);
+            car.SetActive(true);
         }
     }
 }
